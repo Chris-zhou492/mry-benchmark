@@ -1,0 +1,17 @@
+{
+  "history": {
+    "history_id": "hist-synth-1",
+    "family_id": "family-synth-1",
+    "dataset_id": "synthetic-fixture",
+    "messages": [
+      {"message_id": "hidden-persona", "source_order": 0, "speaker_id": "system", "speaker_type": "system", "visibility": "hidden_persona", "content": "HIDDEN_PERSONA_DO_NOT_EXPORT"},
+      {"message_id": "m1", "source_order": 1, "speaker_id": "Alice", "speaker_type": "human", "visibility": "public_history", "content": "My preferred tea is jasmine."},
+      {"message_id": "m2", "source_order": 2, "speaker_id": "Bob", "speaker_type": "human", "visibility": "public_history", "content": "I prefer oolong tea."},
+      {"message_id": "m3", "source_order": 3, "speaker_id": "Alice", "speaker_type": "human", "visibility": "public_history", "content": "Correction: I now prefer green tea."},
+      {"message_id": "m4", "source_order": 4, "speaker_id": "Alice", "speaker_type": "human", "visibility": "public_history", "content": "FUTURE_UPDATE: I now prefer herbal tea."}
+    ]
+  },
+  "questions": [
+    {"question_id": "q-synth-paired-preferences", "query": "tea preferences for Alice and Bob", "allowed_last_message_id": "m3"}
+  ]
+}

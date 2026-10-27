@@ -1,0 +1,32 @@
+[
+  {
+    "speaker": "system",
+    "type": "system",
+    "visibility": "hidden_persona",
+    "text": "HIDDEN_PERSONA_DO_NOT_EXPORT: synthetic-only private profile."
+  },
+  {
+    "speaker": "Alice",
+    "type": "human",
+    "visibility": "public_history",
+    "text": "I prefer teal notebooks."
+  },
+  {
+    "speaker": "Bob",
+    "type": "human",
+    "visibility": "public_history",
+    "text": "I prefer red notebooks."
+  },
+  {
+    "speaker": "Alice",
+    "type": "human",
+    "visibility": "public_history",
+    "text": "Remember my notebook preference."
+  },
+  {
+    "speaker": "Alice",
+    "type": "human",
+    "visibility": "public_history",
+    "text": "FUTURE_UPDATE: now I prefer yellow notebooks."
+  }
+]

@@ -1,0 +1,133 @@
+{
+  "schema_version": "0.1.0",
+  "history": {
+    "dataset_id": "synthetic-not-a-research-result",
+    "family_id": "synthetic-family",
+    "history_id": "synthetic-history",
+    "loader_version": "synthetic/0.1.0",
+    "messages": [
+      {
+        "content": "HIDDEN_PERSONA_DO_NOT_EXPORT: synthetic-only private profile.",
+        "content_sha256": "2aaf432b482f5b78d14009258be23acbe02735b96b673f66a6f953594a3dbeb0",
+        "message_id": "m0",
+        "original_role": "system",
+        "session_id": "synthetic-session",
+        "source_locator": {
+          "file_sha256": "080ffca3b4c71b4ff4b12ec175482f9307468cfce531b48b2e2e676d3502a2c6",
+          "message_pointer": "/text",
+          "record_pointer": "/0"
+        },
+        "source_order": 0,
+        "source_time_raw": null,
+        "speaker_id": "system",
+        "speaker_type": "system",
+        "visibility": "hidden_persona"
+      },
+      {
+        "content": "I prefer teal notebooks.",
+        "content_sha256": "dce034f7d1f9f8e571d6cd7f647b9160980ac6a49a38e989dbc7e0859d4857e7",
+        "message_id": "m1",
+        "original_role": "human",
+        "session_id": "synthetic-session",
+        "source_locator": {
+          "file_sha256": "080ffca3b4c71b4ff4b12ec175482f9307468cfce531b48b2e2e676d3502a2c6",
+          "message_pointer": "/text",
+          "record_pointer": "/1"
+        },
+        "source_order": 1,
+        "source_time_raw": null,
+        "speaker_id": "Alice",
+        "speaker_type": "human",
+        "visibility": "public_history"
+      },
+      {
+        "content": "I prefer red notebooks.",
+        "content_sha256": "8a84b43ccdcf24f814f51407c1d71516f159eeafbab93281c391e72e61c909fc",
+        "message_id": "m2",
+        "original_role": "human",
+        "session_id": "synthetic-session",
+        "source_locator": {
+          "file_sha256": "080ffca3b4c71b4ff4b12ec175482f9307468cfce531b48b2e2e676d3502a2c6",
+          "message_pointer": "/text",
+          "record_pointer": "/2"
+        },
+        "source_order": 2,
+        "source_time_raw": null,
+        "speaker_id": "Bob",
+        "speaker_type": "human",
+        "visibility": "public_history"
+      },
+      {
+        "content": "Remember my notebook preference.",
+        "content_sha256": "90397ef9b95fd1cdab03fadb75f81a1ac73df3a2dc0690f1e340e2135d57c67f",
+        "message_id": "m3",
+        "original_role": "human",
+        "session_id": "synthetic-session",
+        "source_locator": {
+          "file_sha256": "080ffca3b4c71b4ff4b12ec175482f9307468cfce531b48b2e2e676d3502a2c6",
+          "message_pointer": "/text",
+          "record_pointer": "/3"
+        },
+        "source_order": 3,
+        "source_time_raw": null,
+        "speaker_id": "Alice",
+        "speaker_type": "human",
+        "visibility": "public_history"
+      },
+      {
+        "content": "FUTURE_UPDATE: now I prefer yellow notebooks.",
+        "content_sha256": "2690777c15fbecfae079ab271874bb730c50fcf9bd010b159070f8525208b6c9",
+        "message_id": "m4",
+        "original_role": "human",
+        "session_id": "synthetic-session",
+        "source_locator": {
+          "file_sha256": "080ffca3b4c71b4ff4b12ec175482f9307468cfce531b48b2e2e676d3502a2c6",
+          "message_pointer": "/text",
+          "record_pointer": "/4"
+        },
+        "source_order": 4,
+        "source_time_raw": null,
+        "speaker_id": "Alice",
+        "speaker_type": "human",
+        "visibility": "public_history"
+      }
+    ]
+  },
+  "question": {
+    "question_id": "synthetic-q1",
+    "dataset_id": "synthetic-not-a-research-result",
+    "history_id": "synthetic-history",
+    "family_id": "synthetic-family",
+    "query": "What notebook color did Alice prefer at this point?",
+    "task_type": "choice",
+    "last_message_id": "m3",
+    "prefix_sha256": "f1271b2a10f14d157d38cbbdeb8b1c3ecb6aac43ed900fa51106f1b181132673",
+    "public_instructions": "Choose one option.",
+    "options": [
+      {
+        "option_id": "opt_red",
+        "content": "Red"
+      },
+      {
+        "option_id": "opt_teal",
+        "content": "Teal"
+      },
+      {
+        "option_id": "opt_yellow",
+        "content": "Yellow"
+      }
+    ]
+  },
+  "target": {
+    "question_id": "synthetic-q1",
+    "correct_option_id": "opt_teal",
+    "private_note": "PRIVATE_TARGET_DO_NOT_EXPORT: Alice, not Bob; before the update."
+  },
+  "prediction": {
+    "question_id": "synthetic-q1",
+    "answer": "Teal",
+    "selected_option_id": "opt_teal",
+    "abstained": false,
+    "citations": []
+  }
+}

@@ -1,0 +1,10 @@
+# Keep repository-authored text files stable across platforms.
+*.md text eol=lf
+*.py text eol=lf
+*.toml text eol=lf
+*.json text eol=lf
+*.schema.json text eol=lf
+
+# Preserve exact upstream dataset bytes so manifest hashes remain valid after checkout.
+datasets/bundled/** -text -diff
+datasets/bundled/** whitespace=-blank-at-eol

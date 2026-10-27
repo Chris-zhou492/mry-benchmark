@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mry-benchmark"
+version = "0.1.0"
+description = "Independent evidence-grounded memory evaluation research"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/memory_benchmark"]
+
+[tool.hatch.envs.default]
+python = "3.12"
+skip-install = true
+dependencies = []
+
+[tool.hatch.envs.default.env-vars]
+PYTHONPATH = "{root}/src"
+
+[tool.hatch.envs.default.scripts]
+test = "python -m unittest discover -s tests -v"
+inspect = "python -m memory_benchmark.core inspect-fixture"
+schema = "python -m memory_benchmark.export_schema"
+mock-http = "python tools/run_mock_acceptance.py"
+scriptmem-smoke = "python tools/scriptmem_smoke.py"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120

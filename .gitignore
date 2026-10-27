@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+.ruff_cache/
+.uv-cache/
+datasets/*
+datasets/downloads/
+!datasets/manifest.json
+!datasets/bundled/
+!datasets/bundled/**
+outputs/
+state/
+dist/
+*.egg-info/

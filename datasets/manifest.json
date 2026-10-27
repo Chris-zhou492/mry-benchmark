@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "bundled_root": "datasets/bundled",
+  "download_root": "datasets/downloads",
+  "datasets": {
+    "locomo": {
+      "title": "LoCoMo",
+      "repository": "https://github.com/snap-research/LoCoMo",
+      "revision": "3eb6f2c585f5e1699204e3c3bdf7adc5c28cb376",
+      "license": "CC BY-NC 4.0",
+      "files": [
+        {"path": "data/locomo10.json", "url": "https://raw.githubusercontent.com/snap-research/LoCoMo/3eb6f2c585f5e1699204e3c3bdf7adc5c28cb376/data/locomo10.json", "size": 2805274, "sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4", "bundle": "locomo/locomo10.json"}
+      ]
+    },
+    "scriptmem": {
+      "title": "ScriptMem public QA package",
+      "repository": "https://github.com/memorax-ai/ScriptMem",
+      "revision": "831ca3e3123dbaed53fdf7d80fde066bed9f5abc",
+      "license": "CC BY-NC 4.0 (benchmark-created materials only)",
+      "files": [
+        {"path": "data/public/questions.jsonl", "url": "https://raw.githubusercontent.com/memorax-ai/ScriptMem/831ca3e3123dbaed53fdf7d80fde066bed9f5abc/data/public/questions.jsonl", "size": 712122, "sha256": "5d9625c59f60473f5a70183a83531bc90a9273ad869fea794cdde79924b3d0f3", "bundle": "scriptmem/questions.jsonl"},
+        {"path": "data/public/conversations.jsonl", "url": "https://raw.githubusercontent.com/memorax-ai/ScriptMem/831ca3e3123dbaed53fdf7d80fde066bed9f5abc/data/public/conversations.jsonl", "size": 1683, "sha256": "212e15c94d0c18d96e917e4ed4cd17bc9e1547b09ab97e66258c8670f37f0a98", "bundle": "scriptmem/conversations.jsonl"}
+      ]
+    },
+    "personamem-v1-32k": {
+      "title": "PersonaMem v1 32K",
+      "repository": "https://huggingface.co/datasets/bowen-upenn/PersonaMem-v1",
+      "revision": "a8076d5608c93ba2a28983cd78aa99b01a163ae7",
+      "license": "MIT",
+      "files": [
+        {"path": "questions_32k.csv", "url": "https://huggingface.co/datasets/bowen-upenn/PersonaMem-v1/resolve/a8076d5608c93ba2a28983cd78aa99b01a163ae7/questions_32k.csv?download=true", "size": 1305366, "sha256": "cccd34cf53e0bc4d9536c04cff5ca045156d9a4e227e83327112482840bbc93c", "bundle": "personamem-v1-32k/questions_32k.csv"},
+        {"path": "shared_contexts_32k.jsonl", "url": "https://huggingface.co/datasets/bowen-upenn/PersonaMem-v1/resolve/a8076d5608c93ba2a28983cd78aa99b01a163ae7/shared_contexts_32k.jsonl?download=true", "size": 5613210, "sha256": "217247ebfec9e8442fc53570c795ab69f21aad08745f7de78d9beab51b122d4a", "bundle": "personamem-v1-32k/shared_contexts_32k.jsonl"}
+      ]
+    },
+    "personamem-v2-text": {
+      "title": "PersonaMem v2 text benchmark and histories",
+      "repository": "https://huggingface.co/datasets/bowen-upenn/PersonaMem-v2",
+      "revision": "ed956dea41521fc4499acbc63f966e0fd3c053ba",
+      "license": "CC BY 4.0",
+      "files": [
+        {"path": "benchmark/text/benchmark.csv", "url": "https://huggingface.co/datasets/bowen-upenn/PersonaMem-v2/resolve/ed956dea41521fc4499acbc63f966e0fd3c053ba/benchmark/text/benchmark.csv?download=true", "size": 42426457, "sha256": "95f2a8a324aab7baf2af937feae12731369e2abf7cad5ab3e170594cb25a3e52", "bundle": "personamem-v2-text/benchmark.csv"}
+      ],
+      "dynamic_history": {"api": "https://huggingface.co/api/datasets/bowen-upenn/PersonaMem-v2/tree/ed956dea41521fc4499acbc63f966e0fd3c053ba?recursive=true&expand=false", "prefix": "data/chat_history_128k/", "expected_count": 981, "destination": "personamem-v2-text/histories"}
+    },
+    "cl-bench-life": {
+      "title": "CL-bench Life",
+      "repository": "https://huggingface.co/datasets/tencent/CL-bench-Life",
+      "revision": "cd2589fab8ed0af47b2c96b4e104478d72560ebe",
+      "license": "Evaluation-only terms; see included upstream LICENSE.txt",
+      "files": [
+        {"path": "CL-bench Life.jsonl", "url": "https://huggingface.co/datasets/tencent/CL-bench-Life/resolve/cd2589fab8ed0af47b2c96b4e104478d72560ebe/CL-bench%20Life.jsonl?download=true", "size": 29262222, "sha256": "4a10701a74bc9e53a84136e1ab0c5aa06989bbaf04a03ca6db6f6b3f17eaac34", "bundle": "cl-bench-life/CL-bench Life.jsonl"},
+        {"path": "LICENSE.txt", "url": "https://huggingface.co/datasets/tencent/CL-bench-Life/resolve/cd2589fab8ed0af47b2c96b4e104478d72560ebe/LICENSE.txt?download=true", "size": 1528, "sha256": "b681a4620ddb23cb37d2f0fcbe03bda3d8f33971a5143d10f187d8413d985619", "bundle": "cl-bench-life/LICENSE.txt", "license_file": true}
+      ]
+    },
+    "beam-100k": {
+      "title": "BEAM 100K",
+      "repository": "https://huggingface.co/datasets/Mohammadta/BEAM",
+      "revision": "3205395e897e7318c7b094ef4e6047b9b82dbb03",
+      "license": "CC BY-SA 4.0",
+      "files": [
+        {"path": "data/100K-00000-of-00001.parquet", "url": "https://huggingface.co/datasets/Mohammadta/BEAM/resolve/3205395e897e7318c7b094ef4e6047b9b82dbb03/data/100K-00000-of-00001.parquet?download=true", "size": 5429768, "sha256": "c0519be25907005ba873c927c50877471d550873039d96c041554d0075a78ace", "bundle": "beam/100K-00000-of-00001.parquet"}
+      ]
+    },
+    "beam-500k": {
+      "title": "BEAM 500K",
+      "repository": "https://huggingface.co/datasets/Mohammadta/BEAM",
+      "revision": "3205395e897e7318c7b094ef4e6047b9b82dbb03",
+      "license": "CC BY-SA 4.0",
+      "files": [
+        {"path": "data/500K-00000-of-00001.parquet", "url": "https://huggingface.co/datasets/Mohammadta/BEAM/resolve/3205395e897e7318c7b094ef4e6047b9b82dbb03/data/500K-00000-of-00001.parquet?download=true", "size": 33956263, "sha256": "af05921c979355038e1761b7cde3d2dd713200dd3071b278de0200f6c7f30122", "bundle": "beam/500K-00000-of-00001.parquet"}
+      ]
+    },
+    "beam-1m": {
+      "title": "BEAM 1M",
+      "repository": "https://huggingface.co/datasets/Mohammadta/BEAM",
+      "revision": "3205395e897e7318c7b094ef4e6047b9b82dbb03",
+      "license": "CC BY-SA 4.0",
+      "files": [
+        {"path": "data/1M-00000-of-00001.parquet", "url": "https://huggingface.co/datasets/Mohammadta/BEAM/resolve/3205395e897e7318c7b094ef4e6047b9b82dbb03/data/1M-00000-of-00001.parquet?download=true", "size": 66156374, "sha256": "41b5acbbb55a586b1305514ef9d9fb03365d9b3331b598a1c2dd7603d93ef533", "bundle": "beam/1M-00000-of-00001.parquet"}
+      ]
+    },
+    "beam-10m": {
+      "title": "BEAM-10M",
+      "repository": "https://huggingface.co/datasets/Mohammadta/BEAM-10M",
+      "revision": "9b2096193fe74e2837e4713e483351e19817773c",
+      "license": "CC BY-SA 4.0",
+      "files": [
+        {"path": "data/10M-00000-of-00002.parquet", "url": "https://huggingface.co/datasets/Mohammadta/BEAM-10M/resolve/9b2096193fe74e2837e4713e483351e19817773c/data/10M-00000-of-00002.parquet?download=true", "size": 153844664, "sha256": "31d96fd47ec56221d202e68792f26c00e49467dd4b36ee105c36ebd19ef78ad5"},
+        {"path": "data/10M-00001-of-00002.parquet", "url": "https://huggingface.co/datasets/Mohammadta/BEAM-10M/resolve/9b2096193fe74e2837e4713e483351e19817773c/data/10M-00001-of-00002.parquet?download=true", "size": 189980875, "sha256": "a4f13fe25af51d57405ae41008689c31d1421377f3efde56a024b441deb2ee65"}
+      ]
+    },
+    "longmemeval-oracle": {
+      "title": "LongMemEval Oracle",
+      "repository": "https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned",
+      "revision": "98d7416c24c778c2fee6e6f3006e7a073259d48f",
+      "license": "MIT metadata; see DATASET_LICENSES.md",
+      "files": [
+        {"path": "longmemeval_oracle.json", "url": "https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned/resolve/98d7416c24c778c2fee6e6f3006e7a073259d48f/longmemeval_oracle.json?download=true", "size": 15388478, "sha256": "821a2034d219ab45846873dd14c14f12cfe7776e73527a483f9dac095d38620c", "bundle": "longmemeval/longmemeval_oracle.json"}
+      ]
+    },
+    "longmemeval-s": {
+      "title": "LongMemEval S cleaned",
+      "repository": "https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned",
+      "revision": "98d7416c24c778c2fee6e6f3006e7a073259d48f",
+      "license": "MIT metadata; see DATASET_LICENSES.md",
+      "files": [
+        {"path": "longmemeval_s_cleaned.json", "url": "https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned/resolve/98d7416c24c778c2fee6e6f3006e7a073259d48f/longmemeval_s_cleaned.json?download=true", "size": 277383467, "sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442"}
+      ]
+    },
+    "longmemeval-m": {
+      "title": "LongMemEval M cleaned",
+      "repository": "https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned",
+      "revision": "98d7416c24c778c2fee6e6f3006e7a073259d48f",
+      "license": "MIT metadata; see DATASET_LICENSES.md",
+      "files": [
+        {"path": "longmemeval_m_cleaned.json", "url": "https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned/resolve/98d7416c24c778c2fee6e6f3006e7a073259d48f/longmemeval_m_cleaned.json?download=true", "size": 2737100077, "sha256": "9d79e5524794a2e6900a3aa9cb7d9152c5a3e8319c9a87c25494ba1eacee495f"}
+      ]
+    }
+  }
+}
