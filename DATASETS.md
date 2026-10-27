@@ -1,6 +1,6 @@
 # Dataset inventory
 
-This release is a source-pinned data pack, not a frozen experimental split. The research protocol and loaders are still under development. Raw scores across these datasets are not interchangeable and must not be pooled into one accuracy figure.
+This release is a source-pinned data pack, not a frozen experimental split. The unified runner integrates LoCoMo, LongMemEval S/M/Oracle, PersonaMem v1 32K, CL-bench Life, and BEAM 100K/500K/1M with dataset-specific answer/scoring pipelines. ScriptMem QA and its exact option evaluator are included, but full Add/Search evaluation needs source dialogue that the official release omits. PersonaMem v2 data can be retrieved, but its loader is not integrated yet. Raw scores across these datasets are not interchangeable and must not be pooled into one accuracy figure; see [RUN_BENCHMARK.md](RUN_BENCHMARK.md).
 
 ## Included files
 

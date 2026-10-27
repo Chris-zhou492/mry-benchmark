@@ -1,3 +1,3 @@
-"""Independent benchmark package scaffold; the runtime is not implemented yet."""
+"""Independent long-term memory benchmark tools."""
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
